@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.blog.tutorial07.shiro.dao.UsermetaDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.blog.tutorial07.shiro.entity.Usermeta">
+        <id column="umeta_id" property="umetaId"/>
+        <result column="user_id" property="userId"/>
+        <result column="meta_key" property="metaKey"/>
+        <result column="meta_value" property="metaValue"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        umeta_id AS umetaId, user_id AS userId, meta_key AS metaKey, meta_value AS metaValue
+    </sql>
+
+</mapper>
